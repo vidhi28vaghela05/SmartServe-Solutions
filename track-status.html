@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Track Status - SmartServe Solutions</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-50">
+    <!-- Header / Navbar -->
+    <header class="bg-white shadow-md">
+        <nav class="container mx-auto px-6 py-4">
+            <div class="flex items-center justify-between">
+                <a href="index.html" class="text-2xl font-bold text-blue-600">SmartServe Solutions</a>
+                <div class="hidden md:flex space-x-6">
+                    <a href="index.html" class="text-gray-700 hover:text-blue-600 transition">Home</a>
+                    <a href="services.html" class="text-gray-700 hover:text-blue-600 transition">Services</a>
+                    <a href="request-service.html" class="text-gray-700 hover:text-blue-600 transition">Request Service</a>
+                    <a href="track-status.html" class="text-blue-600 font-semibold">Track Status</a>
+                    <a href="payment.html" class="text-gray-700 hover:text-blue-600 transition">Payment</a>
+                    <a href="admin.html" class="text-gray-700 hover:text-blue-600 transition">Admin</a>
+                    <a href="technician.html" class="text-gray-700 hover:text-blue-600 transition">Technician</a>
+                    <a href="contact.html" class="text-gray-700 hover:text-blue-600 transition">Contact</a>
+                    <a href="login.html" class="text-gray-700 hover:text-blue-600 transition">Login</a>
+                    <a href="signup.html" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700 transition">Sign Up</a>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Track Status Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12 text-gray-800">Track Service Status</h2>
+            
+            <!-- Search Form -->
+            <div class="max-w-2xl mx-auto mb-8">
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <form class="flex gap-4">
+                        <input type="text" class="flex-1 px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Enter Request ID">
+                        <button type="submit" class="bg-blue-600 text-white px-6 py-2 rounded-lg font-semibold hover:bg-blue-700 transition">Track</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Service Status Table -->
+            <div class="max-w-4xl mx-auto">
+                <div class="bg-white p-8 rounded-lg shadow-md">
+                    <h3 class="text-2xl font-semibold mb-6 text-gray-800">Service Status</h3>
+                    <div class="overflow-x-auto">
+                        <table class="w-full border-collapse">
+                            <thead>
+                                <tr class="bg-gray-100">
+                                    <th class="border border-gray-300 px-4 py-3 text-left font-semibold text-gray-700">Request ID</th>
+                                    <th class="border border-gray-300 px-4 py-3 text-left font-semibold text-gray-700">Service Type</th>
+                                    <th class="border border-gray-300 px-4 py-3 text-left font-semibold text-gray-700">Status</th>
+                                    <th class="border border-gray-300 px-4 py-3 text-left font-semibold text-gray-700">Date</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td class="border border-gray-300 px-4 py-3 text-gray-700">SR-2024-001</td>
+                                    <td class="border border-gray-300 px-4 py-3 text-gray-700">Plumbing</td>
+                                    <td class="border border-gray-300 px-4 py-3"><span class="bg-yellow-100 text-yellow-800 px-3 py-1 rounded-full text-sm">Pending</span></td>
+                                    <td class="border border-gray-300 px-4 py-3 text-gray-700">2024-01-15</td>
+                                </tr>
+                                <tr class="bg-gray-50">
+                                    <td class="border border-gray-300 px-4 py-3 text-gray-700">SR-2024-002</td>
+                                    <td class="border border-gray-300 px-4 py-3 text-gray-700">Electrical</td>
+                                    <td class="border border-gray-300 px-4 py-3"><span class="bg-blue-100 text-blue-800 px-3 py-1 rounded-full text-sm">In Progress</span></td>
+                                    <td class="border border-gray-300 px-4 py-3 text-gray-700">2024-01-16</td>
+                                </tr>
+                                <tr>
+                                    <td class="border border-gray-300 px-4 py-3 text-gray-700">SR-2024-003</td>
+                                    <td class="border border-gray-300 px-4 py-3 text-gray-700">HVAC</td>
+                                    <td class="border border-gray-300 px-4 py-3"><span class="bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm">Completed</span></td>
+                                    <td class="border border-gray-300 px-4 py-3 text-gray-700">2024-01-14</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-2xl font-bold mb-4">SmartServe Solutions</h3>
+                    <p class="text-gray-400">Your trusted partner for efficient service management.</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Contact Information</h4>
+                    <p class="text-gray-400 mb-2">Email: info@smartserve.com</p>
+                    <p class="text-gray-400">Phone: +1 (555) 123-4567</p>
+                </div>
+                <div>
+                    <h4 class="text-lg font-semibold mb-4">Quick Links</h4>
+                    <div class="flex flex-col space-y-2">
+                        <a href="index.html" class="text-gray-400 hover:text-white transition">Home</a>
+                        <a href="request-service.html" class="text-gray-400 hover:text-white transition">Request Service</a>
+                        <a href="track-status.html" class="text-gray-400 hover:text-white transition">Track Status</a>
+                        <a href="payment.html" class="text-gray-400 hover:text-white transition">Payment</a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 SmartServe Solutions. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
+
